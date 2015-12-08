@@ -1,0 +1,601 @@
+<!DOCTYPE html Public "~//w3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset-UTF-8" />
+    <title>square | gallery | Newsletter</title>
+    <style>
+
+        body, #bodyTable, #bodycell{
+          height: 100% !important;
+          margin: 0;
+          padding: 0;
+          width: 100% !important;
+        }
+        table{
+          border-collapse: collapse;
+        }
+        img, a img{
+          border: 0;
+          outline: none;
+          text-decoration: none;
+
+        }
+        h1, h2, h3, h4, h5, h6{
+          margin: 0;
+          padding:0;
+        }
+
+      /*Client Specific Styles*/
+        .ReadMsgBody{
+          width:100%;
+        }
+        .ExternalClass{
+          width: 100%;
+        }/*Force hotmail/outlook.com to display emails at full width. */
+
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+          line-height: 100%;
+        }/*Force hotmail/outlook.com to display line heights normally. */
+
+
+        table, td{
+          mso-table-lspace:0pt;
+          mso-table-rspace:0pt;
+        }/*Remove spacing between tables in outlook 2007 and up*/
+
+        #outlook a{
+          padding: 0;
+        }/*Force outlook 2007 and up to provide a "view in browser" message.*/
+
+        img{
+          -ms-interpolation-mode:bicubic;
+        }/*Force IE to smoothly render resized images. */
+
+        body, table, td, p, a, li, blockquote{
+          -ms-text-size-adjust:100%;
+        } /*Prevent Windows and Webkit based mobile platforms from changing declared text sizes. */
+
+
+
+        /*General Styles*/
+        h1, h2, h3{
+          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        h1, h1 a{
+
+          color:#D83826;
+          font-size: 44px;
+          font-weight: 100;
+          line-height: 115%;
+          text-align: left;
+        }
+        h2, h2 a{
+
+          color:#606060;
+          font-size: 34px;
+          font-weight: 100;
+          line-height: 100%;
+          text-align: left;
+        }
+
+        h3, h3 a{
+
+          color:#D83826;
+          font-size: 30px;
+          font-weight: 100;
+          line-height: 115%;
+          text-align: left;
+        }
+        .introductionHeading, .introductionContent, .callToActionContent, .callToActionButtonContent, .eventBlockMonth, .eventBlockDay, .eventContent, .merchandiseContent, .merchandiseButtonContent, .footerContent {
+          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        body, #bodyTable{
+          background-color: #424145;
+        }
+        #emailContainer{
+          width:100%;
+        }
+        #heroImageContainer{
+          background-color:#F0F0F0;
+        }
+        #introductionContainer{
+          background-color: #F0F0F0;
+          padding: 40px;
+        }
+        #introductionBlock{
+            background-color: #F0F0F0;
+        }
+        .introductionHeading{
+            color:#808080;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 150%;
+            padding-left: 40px;
+        }
+        .introductionContent{
+            color:#606060;
+            font-size: 18px;
+            line-height: 150%;
+            padding-top: 40px; 
+        }
+
+#callToActionContainer{
+    background-color: #D83826;
+    padding: 40px;
+}
+ #callToActionBlock{
+    background-color: #D83826;
+ }
+ .callToActionContent h3{
+    color:#FFFFFF;
+    text-align: center;
+ }
+
+.callToActionContent{
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 150%;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.callToActionButton{
+    background-color: #F0F0F0;
+    border-radius: 4px;
+    box-shadow: 0 5px 0 #a22a1c;
+}
+
+.callToActionButtonContent{
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+}
+
+.callToActionButtonContent, .callToActionButtonContent a {
+    color: #D83826;
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 100%;
+    letter-spacing: -1px;
+    text-align: center;
+    text-decoration: none;   
+}
+
+
+#eventContainer{
+    background-color: #F0F0F0;
+    padding: 40px;
+}
+
+#eventBlock{
+    background-color:#f0f0f0;
+
+}
+
+#eventBlockCell{
+    padding: 40px;
+}
+.eventBlockCalendar{
+    background-color: #ffffff;
+    border:1px solid #dddddd;
+}
+.eventBlockHeading{
+    padding-bottom:40px;
+}
+.eventBlockMonth{
+    background-color: #D83826;
+    color:#FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 100%;
+    padding: 15px;
+}
+.eventBlockDay{
+    background-color: #F0F0F0;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 100%;
+    padding: 10px;
+}
+
+.eventContent{
+    color:#606060;
+    font-size: 16px;
+    line-height: 125%;
+    padding-left: 20px;
+}
+
+
+
+
+#merchandiseContainer{
+    background-color: #F0F0F0;
+padding: 40px;}
+
+
+#merchandiseBlock{
+    background-color: #FFFFFF;
+    border:1px solid #bbbbbb;
+    border-collapse:separate;
+    border-radius: 4px;
+}
+
+#merchandiseBlockCell{
+    padding: 40px;
+}
+.merchandiseBlockHeading{
+    padding-bottom: 40px;
+}
+.merchandiseBlockLeftColumn{
+    padding-right:10px;
+
+}
+
+.merchandiseBlockRightColumn{
+    padding-left: 10px;
+}
+
+.merchandiseImage{
+    border:1px solid #DDDDDD;
+
+}
+
+
+.merchandiseContent{
+    color: #606060;
+    font-size: 16px;
+    line-height: 110%;
+    padding-left: 10px;
+}
+
+.merchandiseButton{
+    background-color: #D83826;
+    border-radius: 4px;
+    box-shadow: 0 5px 0 #a22a1c;
+}
+
+
+.merchandiseButtonContent, .merchandiseButtonContent a {
+    color: #F0F0F0;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 100%;
+    letter-spacing: -1px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+#footerContainer{
+    padding:40px;
+}
+
+.footerContent{
+    color: #AAAAAA;
+    font-size: 13px;
+    line-height: 150%;
+    padding-bottom: 40px;
+
+}
+
+.footerContent a{
+    color:#D83826;
+    text-decoration: none;
+}
+        </style>
+</head>
+
+<body>
+    <center>
+        <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+            <tr>
+                <td align="center" valign="top" id="bodyCell">
+                <!-- //BEGIN EMAIL -->
+
+                    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="emailContainer">
+                        <tr>
+                            <td align="center" valign="top" id="heroImageContainer">
+                            <!-- //BEGIN HERO BLOCK -->
+                                <img src=" http://lorempixel.com/415/540" alt="Random-Picture" height="415" width="520" id="heroImage" />
+                                <!-- //END HERO BLOCK -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" valign="top" id="introductionContainer">
+                            <!-- //BEGIN INTRO BLOCK-->
+                                <table border="0" cellpadding="0" cellspacing="0" width="520" id="introductionBlock">
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                    <td align="center" valign="top" class="introductionLogo">
+                                                    <a href="#" target="_blank" title="square gallery"><img src="http://lorempixel.com/150/165" alt="random logo" height="165" width="150" /></a>
+                                                    </td>
+                                                    <td align="left" valign="middle" class="introductionHeading">
+                                                        presents
+                                                        <br />
+                                                        <h1>Nullam dictum felis eu pede mollis pretium</h1>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td align="left" valign="top" class="introductionContent">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur bibendum dui, aliquam ultrices lectus porta nec. Nam congue ipsum quis sem convallis faucibus. Mauris blandit ut leo a fringilla. In molestie ligula sit amet orci rhoncus, in sagittis nunc scelerisque. Proin vel erat imperdiet, pulvinar sapien non, auctor libero. Proin viverra, odio sit amet gravida egestas, leo tortor placerat ipsum, nec molestie ante sem eu arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- //END INTRO BLOCK-->
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td align="center" valign="top" id="callToActionContainer">
+                            <!-- //BEGIN CALL-TO-ACTION BLOCK-->
+                            <table border="0" cellspacing="0" cellpadding="0" width="520" id="callToActionBlock">
+                            	<tr>
+                            		<td align="center" valign="top" class="callToActionContent">
+                            		<h3>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </h3>
+                                  <br />
+                                                                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur bibendum dui, aliquam ultrices lectus porta nec. Nam congue ipsum quis sem convallis faucibus. Mauris blandit ut leo a fringilla. In molestie ligula sit amet orci rhoncus, in sagittis nunc scelerisque. Proin vel erat imperdiet, pulvinar sapien non, auctor libero. Proin viverra, odio sit amet gravida egestas, leo tortor placerat ipsum, nec molestie ante sem eu arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+                                    </td>
+                            	</tr>
+                                <tr>
+                                    <td align="center" valign="top">
+                                        <table border="0" cellpadding="0" cellspacing="0" class="callToActionButton">
+                                        <tr>
+                                            <td align="center" valign="top" class="callToActionButtonContent">
+                                                <a href="#" target="_blank" title="square gallery">Register</a>
+                                            </td>
+                                        </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- //END CALL-TO-ACTION BLOCK-->
+                            </td>
+                        </tr>
+
+
+
+
+
+
+
+                        <tr>
+                            <td align="center" valign="top" id="eventContainer">
+                        <table border="0" cellpadding="0" cellspacing="0" width="600" id="eventBlock">
+                            <tr>
+                                <td align="center" valign="top" id="eventBlockCell">
+                                    <table border="0" cellpadding="0" cellpadding="0" width="100%">
+                                        <tr>
+                                            <td align="0" valign="top" class="eventBlockHeading">
+                                            <h2>Upcoming Events</h2>
+                                            </td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td align="center" valign="top">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                   <td align="center" valign="top">
+                                                       <table border="0" cellpadding="0" cellspacing="0" width="110" class="eventBlockCalendar">
+                                                           <tr>
+                                                               <td align="center" valign="top" class="eventBlockMonth">
+                                                                   Nov
+                                                               </td>
+                                                           </tr>
+                                                           <tr>
+                                                               <td align="center" valign="top" class="eventBlockDay">
+                                                                   7
+                                                               </td>
+                                                           </tr>
+                                                       </table>
+                                                   </td>
+                                                   <td align="left" valign="top" class="eventContent">
+                                                       <h3>Some Event</h3>
+                                                       <strong>Running November 7 through December 14</strong>
+                                                       <br />
+Donec vitae sapien ut libero venenatis faucibus.                                                    </td>
+                                                </tr>
+
+
+
+
+                                            </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                        </table>
+                            </td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <tr>
+                            <td align="center" valign="top" id="merchandiseContainer">
+                        <table border="0" cellspacing="0" cellpadding="0" width="600" id="merchandiseBlock">
+                           <tr>
+                           <td align="center" valign="top" id="merchandiseBlockCell">
+                           <table border="0" cellpadding="0" cellpadding="0" width="100%">
+                               <tr>
+                                   <td align="left" valign="top" class="merchandiseBlockHeading">
+                                   <h2>Support square gallery</h2>
+                                   </td>
+                               </tr>
+                            <tr>
+                                <td align="center" valign="top">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td align="center" valign="top" width="50%" class="merchandiseBlockLeftColumn">
+
+                                            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+
+                                                <tr>
+                                                    <td align="center" valign="top">
+                                <img src=" http://lorempixel.com/150/110" alt="Random-Picture" height="150" width="110" class="merchandiseImage" />
+                                                    </td>
+                                                    <td align="left" valign="top" width="100%" class="merchandiseContent">
+                                                        Art Print:
+                                                            <br />
+                                                            <strong>
+                                                                Berethe Morisot With A Bouquet of Violets
+                                                            </strong>
+                                                            <br />
+                                                            11"x7" - $29.99
+                                                            <br />
+                                                            <br />
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="merchandiseButton">
+                                                            <tr>
+                                                                <td align="center" valign="middle" class="merchandiseButtonContent">
+                                                                <a href="#" target="_blank" title="">Purchase</a>
+                                                                </td>
+                                                            </tr>
+                                                            </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+
+
+                                            </td>
+                                            <td align="center" valign="top" width="50%" class="merchandiseBlockRightColumn">
+                                                   <table border="0" cellspacing="0" cellpadding="0" width="100%">
+
+                                                <tr>
+                                                    <td align="center" valign="top">
+                                <img src=" http://lorempixel.com/150/110" alt="Random-Picture" height="150" width="110" class="merchandiseImage" />
+                                                    </td>
+                                                    <td align="left" valign="top" width="100%" class="merchandiseContent">
+                                                        T-Shirt:
+                                                            <br />
+                                                            <strong>
+                                                               square gallery Logo Tee
+                                                            </strong>
+                                                            <br />
+                                                            8 Sizes- $19.99
+                                                            <br />
+                                                            <br />
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="merchandiseButton">
+                                                            <tr>
+                                                                <td align="center" valign="middle" class="merchandiseButtonContent">
+                                                                <a href="#" target="_blank" title="">Purchase</a>
+                                                                </td>
+                                                            </tr>
+                                                            </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                            </td>
+
+                                        </tr>
+
+
+                                    </table>
+                                </td>
+                            </tr>
+                           </table>
+                           </td>
+                           </tr>
+                        </table>
+                             </td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <tr>
+                            <td align="center" valign="top" id="footerContainer">
+                            <table border="0" cellpadding="0" cellspacing="0" width="600" id="footerBlock">
+                                <tr>
+                                    <td align="center" valign="top" class="footerContent">
+                                        <strong>
+                                            As always, everyone at square gallery thanks you
+                                            <br />
+                                            for your support. We couldn't exist without you.
+                                        </strong>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" valign="top" class="footerContent">
+                                    &copy; 2013 square gallery. &bull; 1551 Peachtree Street NW &bull; Atlanta, Georgia 30318
+                                    <br />
+                                    <br />
+                                    <a href="#" target="_blank">unscribe from list</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" target="blank">set email preferences</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="#" target="_blank">view in browser</a>
+
+                                    </td>
+                                </tr>
+
+                            </table>
+                            </td>
+
+
+
+                        </tr>
+
+
+
+
+
+
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>
